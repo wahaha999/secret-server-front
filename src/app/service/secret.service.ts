@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/v1";
+const API_URL = "https://api-secretserver.herokuapp.com/v1";
 
 export async function getSecrets() {
   const Service_URL = `${API_URL}/get`;
