@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { TableColumn } from "react-data-table-component";
+import { useDispatch, useSelector } from "react-redux";
 import { Secret } from "../types/data";
 import { customQuotesSort } from "../helper/table.helper";
 import { getSecret } from "../service/secret.service";
 import moment from "moment";
 import DataTableBase from "../components/DataTableBase";
 import * as Style from "../components/styles";
-import { useDispatch, useSelector } from "react-redux";
 import { getSecrets } from "../../store/secret/selectors";
 import { getAllSecrets } from "../../store/secret";
 
