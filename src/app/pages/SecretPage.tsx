@@ -52,9 +52,9 @@ const DashboardPage = () => {
       {
         name: "Actions",
         cell: (row) => (
-          <a href="#" onClick={() => openSecret(row.hash)}>
+          <span className="show-secret" onClick={() => openSecret(row.hash)}>
             Show
-          </a>
+          </span>
         ),
         style: {
           maxWidth: "unset !important",
