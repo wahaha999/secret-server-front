@@ -52,7 +52,7 @@ const DashboardPage = () => {
       {
         name: "Actions",
         cell: (row) => (
-          <a href="#" onClick={() => openSecret(row.hash)}>
+          <a href="/" onClick={() => openSecret(row.hash)}>
             Show
           </a>
         ),
